@@ -1,9 +1,12 @@
 import tkinter as tk
-from tkinter import ttk
 from ics import Calendar
 import requests
-from pprint import pprint
-URL = ""
+from dotenv import load_dotenv
+from os import environ
+
+load_dotenv()
+
+URL = environ["URL"]
 
 assignments_calendar = Calendar(requests.get(URL).text)
 course_assignments = {}
@@ -18,7 +21,6 @@ for assignment in assignments_calendar.events:
 
 def on_select(event):
     global selected_course
-    print(course_assignments.keys())
     selected_course = course_assignments[event.widget.selection_get()]
     update_assignments()
 
@@ -26,7 +28,6 @@ def on_select(event):
 def update_assignments():
     assignment_list.delete(0, tk.END)
     for assignment in selected_course:
-        print(assignment)
         assignment_list.insert(tk.END, assignment["name"])
 
 
