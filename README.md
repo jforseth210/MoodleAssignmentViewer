@@ -6,6 +6,7 @@ To install this program, you'll need [python](https://www.python.org) and [git](
 1. Simply clone the repository using: 
 ```bash
 git clone https://github.com/jforseth210/MoodleAssignmentViewer
+cd MoodleAssignmentViewer
 ```
 
 2. Install the dependencies using: 
