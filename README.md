@@ -1,7 +1,7 @@
 # Moodle Assignment Viewer 
 This is a simple imap client written in python that allows you to view emails in the console. 
 
-To install this program, you'll need [https://www.python.org](python) and [https://git-scm.com](git) installed.
+To install this program, you'll need [python](https://www.python.org) and [git](https://git-scm.com) installed.
 
 1. Simply clone the repository using: 
 ```bash
