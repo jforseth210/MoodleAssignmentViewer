@@ -1,5 +1,5 @@
 # Moodle Assignment Viewer 
-This is a simple imap client written in python that allows you to view emails in the console. 
+This is a simple moddle client written in python that allows you to view assignments in a graphical user interface. 
 
 To install this program, you'll need [python](https://www.python.org) and [git](https://git-scm.com) installed.
 
